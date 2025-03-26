@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mail Marketing - Ômega 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: black;
+            padding: 15px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: lighter;
+        }
+
+        /* Main Content */
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 22px;
+            margin-top: 24px;
+        }
+
+        .content p {
+            font-size: 17px;
+            color: #666666;
+            line-height: 1.5;
+            margin-bottom: 22px;
+        }
+
+        .content p strong {
+            color: #7C68B5;
+        }
+
+        .highlight {
+            color: #7C68B5;
+            font-weight: bold;
+        }
+
+        .mid-nav {
+            border-right: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+
+        /* Omega Section */
+
+        .omega-section {
+            max-width: 400px;
+            margin: 20px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .omega-main {
+            margin-left: 24px;
+        }
+
+        .omega-section h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .omega-section p {
+            text-align: left;
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 22px;
+        }
+
+        .omega-section p .highlight {
+            color: #7C68B5;
+        }
+
+        .button-section {
+            display: flex;
+            align-items: start;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 10px 12px 10px;
+            width: 224px;
+            height: 45px;
+            background-color: white;
+            color: black;
+            font-size: 17px;
+            font-weight: lighter;
+            letter-spacing: 0px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .composition-main {
+            padding: 12px 30px;
+            text-align: left;
+            font-size: 17px;
+            letter-spacing: 0px;
+        }
+
+        .composition-article {
+            margin-bottom: 30px;
+        }
+
+        .composition-main span {
+            color: #7C68B5;
+            font-weight: bold;
+        }
+
+        .composition-section {
+            max-width: 400px;
+            margin: 20px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            background-color: #EDEDED;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .flex-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .circle {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid #7C68B5;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+
+        .text-lg {
+            font-size: 1.2em;
+            color: black !important;
+            font-weight: lighter !important;
+        }
+
+        .icon-img {
+            width: 55px;
+            object-fit: contain;
+            height: 48px;
+        }
+
+        /* PROTEINS */
+
+        .protein-section {
+            max-width: 400px;
+            margin: 20px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            background-color: white;
+            padding: 25px;
+            padding-bottom: 20px;
+        }
+
+        .protein-main {
+            padding: 12px 30px;
+            text-align: left;
+            font-size: 17px;
+            letter-spacing: 0px;
+        }
+
+        .protein-section h2 {
+            font-size: 17px;
+            color: #333333;
+            width: 300px;
+            font-weight: bolder;
+            margin-bottom: 22px;
+        }
+
+        .protein-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .protein-section li {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .protein-section li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background-color: #7C68B5;
+            border-radius: 50%;
+        }
+
+        /* KNOW MORE */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .container-know {
+            position: relative;
+            text-align: center;
+            font-family: "Montserrat", sans-serif !important;
+        }
+
+        .container-know img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .text-overlay p {
+            margin: 0;
+        }
+
+        .text-overlay .line1 {
+            font-size: 16px;
+            font-weight: lighter;
+            width: 369px;
+            margin-bottom: 12px;
+        }
+
+        .text-overlay .line2 {
+            font-size: 21px;
+            font-weight: 900;
+            width: 369px;
+            color: #7C68B5;
+            margin-top: 0.5rem;
+        }
+
+        /* WHEY PROTEIN */
+
+        .product {
+            max-width: 400px;
+            margin: 20px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            background-color: white;
+            padding: 25px;
+            padding-bottom: 40px;
+        }
+
+        .whey-main {
+            display: flex;
+            margin: 15px 0 15px 0;
+        }
+
+        .img-product {
+            width: 150px;
+            object-fit: contain;
+            height: 150px;
+        }
+
+        .product h1 {
+            font-size: 17px;
+            color: #7C68B5;
+            margin: 10px 0 0 0;
+        }
+
+        .product h2 {
+            font-size: 12px;
+            color: #333333;
+            margin-top: 0px;
+        }
+
+        .product p {
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+        .product h3 {
+            font-size: 16px;
+            color: #333;
+            margin: 15px 0 0 0;
+        }
+
+        .items {
+            padding: 0;
+            text-align: left;
+        }
+
+        .items li {
+            margin: 5px 0;
+        }
+
+        .whey-composition {
+            margin-left: 33px;
+        }
+
+        /* Options */
+
+        .options {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            margin: 20px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .options h1 {
+            font-size: 21px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            color: #7C68B5;
+        }
+
+        .options p {
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .buttons-options {
+            display: flex;
+            border-top: 2px solid #7C68B5;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .option-btn {
+            display: inline-block;
+            padding: 13px 10px 12px 10px;
+            width: 121px;
+            height: 46px;
+            background-color: white;
+            color: black;
+            font-size: 17px;
+            font-weight: lighter;
+            letter-spacing: 0px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .option-btn:hover {
+            background-color: #7C68B5;
+            color: white;
+        }
+
+        .buy-button {
+            font-size: 15px;
+        }
+        /* Product Card */
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            max-width: 400px;
+            margin: 20px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .product-image {
+            width: 43%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-title {
+            font-size: 20px;
+            color: #7C68B5;
+            margin: 0 0 8px 0;
+            width: 161px;
+            text-align: left;
+        }
+
+        .product-value {
+            font-size: 15px;
+            color: #333333;
+        }
+
+        .article-the {
+            font-weight: bold;
+        }
+
+        .product-price {
+            font-size: 15px;
+            text-decoration: line-through;
+            color: #333333;
+            margin: 0;
+        }
+
+        .product-discount {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 8px 0;
+            padding: 3px 3px 3px 10px;
+            border-radius: 5px;
+            color: white;
+            background-color: #847F7A;
+        }
+
+        .buy-buttom {
+            color: #7C68B5;
+        }
+
+        .prices-area {
+            text-align: left;
+        }
+
+        /* Promotion */
+
+        .text-overlay .line3 {
+            font-size: 21px;
+            font-weight: 900;
+            width: 369px;
+            color: #7C68B5;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-promo {
+            display: inline-block;
+            padding: 10px 50px 8px 49px;
+            width: 181px;
+            height: 32px;
+            background-color: white;
+            color: black;
+            font-size: 13px;
+            font-weight: lighter;
+            letter-spacing: 0px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">HOME</a>
+        <a class="mid-nav" href="#">LANÇAMENTOS</a>
+        <a href="#">LOGIN</a>
+    </nav>
+    <div id="main-content" class="container">
+        <div class="image-container">
+            <img src="images/product-image.png" alt="Ômega Brain">
+        </div>
+        <div class="content">
+            <h2>Olá, Tudo bem?</h2>
+            <p>
+                Uma ótima alternativa para essa situação é abordar a
+                <strong>relação do ômega-3 com o bom funcionamento do nosso cérebro.</strong>
+            </p>
+            <p>
+                <span class="highlight">60% da estrutura cerebral</span> é formada por gorduras e
+                <span class="highlight">20% dessa quantidade representa o DHA</span>, um ácido graxo que faz parte da
+                composição do ômega-3.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="images/capsule.png" alt="Cápsula de Ômega 3">
+        </div>
+    </div>
+    <div id="omega" class="omega-section">
+        <div class="omega-main">
+            <h2>ÔMEGA-3 E OUTROS NUTRIENTES PARA O CÉREBRO</h2>
+            <p>Entre os ácidos graxos que compõem o ômega-3, o <span class="highlight">DHA</span> é o que tem <span
+                    class="highlight">mais facilidade de ser absorvido</span> pelo nosso cérebro.</p>
+            <p>Para entender um pouco mais sobre essa relação e ainda descobrir outros hábitos que podem ajudar na <span
+                    class="highlight">saúde cerebral</span>, acesse o artigo no nosso blog!</p>
+            <div class="button-section">
+                <a href="#" class="btn">ACESSAR CONTEÚDO</a>
+            </div>
+        </div>
+    </div>
+    <div id="composition" class="composition-section">
+        <div class="composition-main">
+            <p class="composition-article">Uma composição inteligente com ômega-3 que pode ajudar você a <span>melhorar
+                    as conexões cerebrais,
+                    aumentar o foco e aprimorar a concentração.</span></p>
+            <div class="grid">
+                <div class="flex-col">
+                    <div class="circle">
+                        <span class="text-lg">150mg</span>
+                    </div>
+                    <p>Cafeína Natural</p>
+                </div>
+                <div class="flex-col">
+                    <div class="circle">
+                        <span class="text-lg">150mg</span>
+                    </div>
+                    <p>Fosfatidilserina</p>
+                </div>
+                <div class="flex-col">
+                    <div class="circle">
+                        <img class="icon-img" src="images/ginger.svg" alt="Desenho de gengibre">
+                    </div>
+                    <p>Extrato de Gengibre Tailandês</p>
+                </div>
+                <div class="flex-col">
+                    <div class="circle">
+                        <img class="icon-img" src="images/fish.png" alt="Desenho de peixe e krill">
+                    </div>
+                    <p>Óleos de Peixe e de Krill</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="protein" class="protein-section">
+        <div class="protein-main ">
+            <h2>PROTEÍNAS: O SUPLEMENTO MAIS CONSUMIDO POR ESPORTISTAS.</h2>
+            <ul>
+                <li>Ganho de massa magra</li>
+                <li>Melhora na composição corporal</li>
+                <li>Saciedade</li>
+            </ul>
+        </div>
+    </div>
+    <div id="know-image" class="container">
+        <div class="container-know">
+            <img src="images/image-know.png" alt="Conheça Mais" />
+            <div class="text-overlay">
+                <p class="line1">VOCÊ CONHECE AS DIFERENÇAS<br> ENTRE AS PROTEÍNAS?</p>
+                <p class="line2">VEM DESCOBRIR AS OPÇÕES<br> DA NOSSA LINHA.</p>
+            </div>
+        </div>
+    </div>
+    <div id="product-image" class="product">
+        <div class="whey-main">
+            <img src="images/whey-protein.png" alt="Whey Protein" class="img-product">
+            <div>
+                <h1>WHEY PROTEIN</h1>
+                <h2>22g PROTEÍNA</h2>
+                <h3>Sabores</h3>
+                <p>Cacau, Açaí com Banana, Cappuccino, Frutas Vermelhas, Café Espresso, Baunilha, Abacaxi com Água de
+                    Coco e Neutro</p>
+            </div>
+        </div>
+        <div class="whey-composition">
+            <h3>Composição</h3>
+            <ul class="items">
+                <li>Proteínas hidrolisadas e isolada do soro de leite (WPH e WPI)</li>
+                <li>Peptídeos de colágeno Peptan®</li>
+                <li>BCAA naturalmente em sua composição</li>
+                <li>Adoçantes naturais</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <img src="images/product-low.png" alt="Ômega Brain">
+        </div>
+    </div>
+    <div id="line-options" class="options">
+        <h1>VEM DESCOBRIR AS OPÇÕES<br> DA NOSSA LINHA.</h1>
+        <p>Disponível em dois sabores:</p>
+        <div class="buttons-options">
+            <button class="option-btn">NEUTRO</button>
+            <button class="option-btn">LIMÃO</button>
+        </div>
+    </div>
+    <div id="product-card" class="product-card">
+        <img src="images/product-final.png" alt="Produto" class="product-image">
+        <div class="product-info">
+            <h2 class="product-title">ENDURANCE<br> AND RECOVERY</h2>
+            <div class="prices-area">
+                <p class="product-value"><span class="article-the">De:</span> R$ <span
+                        class="product-price">195,00</span></p>
+                <p class="product-discount">Por: R$ 165,75</p>
+                <a href="#" class="buy-button">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <div id="promo-section" class="container">
+        <div class="container-know">
+            <img src="images/promo-back.png" alt="Background de Promoção" />
+            <div class="text-overlay">
+                <p class="line3">ÚLTIMAS HORAS PARA<br> APROVEITAR!</p>
+                <button class="btn-promo">VER TODOS</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
