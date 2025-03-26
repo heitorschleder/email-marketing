@@ -382,7 +382,9 @@
 
         .options p {
             font-size: 17px;
-            margin-bottom: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 5px;
         }
 
         .buttons-options {
@@ -412,6 +414,7 @@
         }
 
         .buy-button {
+            color: #7C68B5;
             font-size: 15px;
         }
         /* Product Card */
@@ -497,8 +500,6 @@
         }
 
         .btn-promo {
-            display: inline-block;
-            padding: 10px 50px 8px 49px;
             width: 181px;
             height: 32px;
             background-color: white;
@@ -509,13 +510,25 @@
             text-decoration: none;
             border-radius: 5px;
         }
+
+        .link-to {
+            text-decoration: none;
+            font-size: 13px;
+            color: black;
+        }
+
+        .link-to2 {
+            text-decoration: none;
+            font-size: 17px;
+            color: black;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="#">HOME</a>
-        <a class="mid-nav" href="#">LANÇAMENTOS</a>
-        <a href="#">LOGIN</a>
+        <a href="https://www.essentialnutrition.com.br/">HOME</a>
+        <a class="mid-nav" href="https://www.essentialnutrition.com.br/produtos/lancamentos">LANÇAMENTOS</a>
+        <a href="https://www.essentialnutrition.com.br/customer/account/login/">LOGIN</a>
     </nav>
     <div id="main-content" class="container">
         <div class="image-container">
@@ -545,7 +558,7 @@
             <p>Para entender um pouco mais sobre essa relação e ainda descobrir outros hábitos que podem ajudar na <span
                     class="highlight">saúde cerebral</span>, acesse o artigo no nosso blog!</p>
             <div class="button-section">
-                <a href="#" class="btn">ACESSAR CONTEÚDO</a>
+                <a href="https://www.essentialnutrition.com.br/conteudos/" class="btn">ACESSAR CONTEÚDO</a>
             </div>
         </div>
     </div>
@@ -632,8 +645,8 @@
         <h1>VEM DESCOBRIR AS OPÇÕES<br> DA NOSSA LINHA.</h1>
         <p>Disponível em dois sabores:</p>
         <div class="buttons-options">
-            <button class="option-btn">NEUTRO</button>
-            <button class="option-btn">LIMÃO</button>
+            <button class="option-btn"><a class="link-to2" href="https://www.essentialnutrition.com.br/collagen-2-joint-neutro-lata">NEUTRO</a></button>
+            <button class="option-btn"><a class="link-to2" href="https://www.essentialnutrition.com.br/collagen-2-joint-limao-siciliano-lata">LIMÃO</a></button>
         </div>
     </div>
     <div id="product-card" class="product-card">
@@ -644,7 +657,7 @@
                 <p class="product-value"><span class="article-the">De:</span> R$ <span
                         class="product-price">195,00</span></p>
                 <p class="product-discount">Por: R$ 165,75</p>
-                <a href="#" class="buy-button">Comprar</a>
+                <a href="https://www.essentialnutrition.com.br/carbpro-4-1-citrus" class="buy-button">Comprar</a>
             </div>
         </div>
     </div>
@@ -653,7 +666,7 @@
             <img src="images/promo-back.png" alt="Background de Promoção" />
             <div class="text-overlay">
                 <p class="line3">ÚLTIMAS HORAS PARA<br> APROVEITAR!</p>
-                <button class="btn-promo">VER TODOS</button>
+                <button class="btn-promo"><a class="link-to" href="https://www.essentialnutrition.com.br/produtos">VER TODOS</a></button>
             </div>
         </div>
     </div>
