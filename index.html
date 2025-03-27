@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -231,6 +232,20 @@
             margin-bottom: 22px;
         }
 
+        @media (max-width: 320px) {
+            .protein-section h2 {
+                width: 255px;
+            }
+
+            .text-overlay .line1 {
+                width: 322px !important;
+            }
+
+            .text-overlay .line2 {
+                width: 322px !important;
+            }
+        }
+
         .protein-section ul {
             list-style: none;
             padding: 0;
@@ -294,6 +309,7 @@
             color: #7C68B5;
             margin-top: 0.5rem;
         }
+
 
         /* WHEY PROTEIN */
 
@@ -417,6 +433,7 @@
             color: #7C68B5;
             font-size: 15px;
         }
+
         /* Product Card */
 
         .product-card {
@@ -534,6 +551,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav class="navbar">
         <a href="https://www.essentialnutrition.com.br/">HOME</a>
@@ -542,7 +560,7 @@
     </nav>
     <div id="main-content" class="container">
         <div class="image-container">
-            <img src="images/product-image.png" alt="Ômega Brain">
+            <img src="images/product-image.png" alt="Ômega Brain" loading="lazy">
         </div>
         <div class="content">
             <h2>Olá, Tudo bem?</h2>
@@ -557,7 +575,7 @@
             </p>
         </div>
         <div class="image-container">
-            <img src="images/capsule.png" alt="Cápsula de Ômega 3">
+            <img src="images/capsule.png" alt="Cápsula de Ômega 3" loading="lazy">
         </div>
     </div>
     <div id="omega" class="omega-section">
@@ -592,13 +610,13 @@
                 </div>
                 <div class="flex-col">
                     <div class="circle">
-                        <img class="icon-img" src="images/ginger.svg" alt="Desenho de gengibre">
+                        <img class="icon-img" src="images/ginger.svg" alt="Desenho de gengibre" loading="lazy">
                     </div>
                     <p>Extrato de Gengibre Tailandês</p>
                 </div>
                 <div class="flex-col">
                     <div class="circle">
-                        <img class="icon-img" src="images/fish.png" alt="Desenho de peixe e krill">
+                        <img class="icon-img" src="images/fish.png" alt="Desenho de peixe e krill" loading="lazy">
                     </div>
                     <p>Óleos de Peixe e de Krill</p>
                 </div>
@@ -617,7 +635,7 @@
     </div>
     <div id="know-image" class="container">
         <div class="container-know">
-            <img src="images/image-know.png" alt="Conheça Mais" />
+            <img src="images/image-know.png" alt="Conheça Mais" loading="lazy" />
             <div class="text-overlay">
                 <p class="line1">VOCÊ CONHECE AS DIFERENÇAS<br> ENTRE AS PROTEÍNAS?</p>
                 <p class="line2">VEM DESCOBRIR AS OPÇÕES<br> DA NOSSA LINHA.</p>
@@ -626,7 +644,7 @@
     </div>
     <div id="product-image" class="product">
         <div class="whey-main">
-            <img src="images/whey-protein.png" alt="Whey Protein" class="img-product">
+            <img src="images/whey-protein.png" alt="Whey Protein" class="img-product" loading="lazy">
             <div>
                 <h1>WHEY PROTEIN</h1>
                 <h2>22g PROTEÍNA</h2>
@@ -648,19 +666,21 @@
     </div>
     <div class="container">
         <div class="image-container">
-            <img src="images/product-low.png" alt="Ômega Brain">
+            <img src="images/product-low.png" alt="Ômega Brain" loading="lazy">
         </div>
     </div>
     <div id="line-options" class="options">
         <h1>VEM DESCOBRIR AS OPÇÕES<br> DA NOSSA LINHA.</h1>
         <p>Disponível em dois sabores:</p>
         <div class="buttons-options">
-            <button class="option-btn"><a class="link-to2" href="https://www.essentialnutrition.com.br/collagen-2-joint-neutro-lata">NEUTRO</a></button>
-            <button class="option-btn"><a class="link-to2" href="https://www.essentialnutrition.com.br/collagen-2-joint-limao-siciliano-lata">LIMÃO</a></button>
+            <button class="option-btn"><a class="link-to2"
+                    href="https://www.essentialnutrition.com.br/collagen-2-joint-neutro-lata">NEUTRO</a></button>
+            <button class="option-btn"><a class="link-to2"
+                    href="https://www.essentialnutrition.com.br/collagen-2-joint-limao-siciliano-lata">LIMÃO</a></button>
         </div>
     </div>
     <div id="product-card" class="product-card">
-        <img src="images/product-final.png" alt="Produto" class="product-image">
+        <img src="images/product-final.png" alt="Produto" class="product-image" loading="lazy">
         <div class="product-info">
             <h2 class="product-title">ENDURANCE<br> AND RECOVERY</h2>
             <div class="prices-area">
@@ -673,12 +693,14 @@
     </div>
     <div id="promo-section" class="container">
         <div class="container-promo">
-            <img src="images/promo-back.png" alt="Background de Promoção" />
+            <img src="images/promo-back.png" alt="Background de Promoção" loading="lazy" />
             <div class="text-overlay">
                 <p class="line3">ÚLTIMAS HORAS PARA<br> APROVEITAR!</p>
-                <button class="btn-promo"><a class="link-to" href="https://www.essentialnutrition.com.br/produtos">VER TODOS</a></button>
+                <button class="btn-promo"><a class="link-to" href="https://www.essentialnutrition.com.br/produtos">VER
+                        TODOS</a></button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
